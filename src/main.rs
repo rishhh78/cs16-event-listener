@@ -2,8 +2,8 @@ use tokio::net::UdpSocket;
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
-    let socket = UdpSocket::bind("0.0.0.0:27005").await?;
-    
+    let socket = UdpSocket::bind("0.0.0.0:29953").await?;
+
     let mut buf = [0u8; 1024];
 
     println!("Listening to logs on port 27005");
